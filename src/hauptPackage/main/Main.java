@@ -16,7 +16,7 @@ public class Main extends javafx.application.Application {
     @Override
     public void start(Stage primaryStage) throws IOException {
         Parent root = FXMLLoader.load(getClass().getResource("..\\viewctrl\\main.fxml"));
-        primaryStage.setTitle("hauptPackage.main.Main View");
+        primaryStage.setTitle("Waehrungsrechner");
         primaryStage.setScene(new Scene(root));
         primaryStage.show();
     }
