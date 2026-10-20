@@ -4,7 +4,11 @@
 <?import javafx.scene.control.ChoiceBox?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.Glow?>
+<?import javafx.scene.effect.Light.Distant?>
+<?import javafx.scene.effect.Lighting?>
 <?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.Color?>
 <?import javafx.scene.text.Font?>
 
 <AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/26" xmlns:fx="http://javafx.com/fxml/1" fx:controller="hauptPackage.viewctrl.MainController">
@@ -13,15 +17,44 @@
          <font>
             <Font size="22.0" />
          </font>
+         <effect>
+            <Glow level="0.0" />
+         </effect>
       </Label>
-      <ChoiceBox fx:id="choiceBox" layoutX="364.0" layoutY="115.0" prefHeight="25.0" prefWidth="88.0" />
+      <ChoiceBox fx:id="choiceBox" layoutX="364.0" layoutY="115.0" prefHeight="25.0" prefWidth="88.0">
+         <effect>
+            <Glow level="0.0" />
+         </effect></ChoiceBox>
       <Button layoutX="242.0" layoutY="303.0" mnemonicParsing="false" onAction="#doClick" text="Umrechnen">
          <font>
             <Font size="18.0" />
          </font>
+         <effect>
+            <Glow level="0.0" />
+         </effect>
       </Button>
-      <TextField fx:id="textField" layoutX="145.0" layoutY="115.0" prefHeight="25.0" prefWidth="203.0" />
-      <ChoiceBox fx:id="currency2" layoutX="364.0" layoutY="213.0" prefHeight="25.0" prefWidth="88.0" />
-      <Label fx:id="value" layoutX="145.0" layoutY="217.0" text="Label" />
+      <TextField fx:id="textField" layoutX="145.0" layoutY="115.0" prefHeight="25.0" prefWidth="203.0">
+         <effect>
+            <Glow level="0.0" />
+         </effect></TextField>
+      <ChoiceBox fx:id="currency2" layoutX="364.0" layoutY="213.0" prefHeight="25.0" prefWidth="88.0">
+         <effect>
+            <Glow level="0.0" />
+         </effect></ChoiceBox>
+      <Label fx:id="value" layoutX="145.0" layoutY="217.0" text="Label">
+         <effect>
+            <Glow level="0.0" />
+         </effect></Label>
    </children>
+   <effect>
+      <Lighting bumpInput="$null" diffuseConstant="2.0" specularConstant="0.0" specularExponent="19.08" surfaceScale="1.04">
+         <light>
+            <Light.Distant>
+               <color>
+                  <Color red="0.373781681060791" green="0.44621506333351135" blue="0.6842105388641357" />
+               </color>
+            </Light.Distant>
+         </light>
+      </Lighting>
+   </effect>
 </AnchorPane>
